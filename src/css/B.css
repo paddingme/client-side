@@ -1,0 +1,47 @@
+img {
+  display:block;
+  border: 0;
+}
+button, input, select, textarea {
+    font-size: 100%;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+hr {
+    border: none;
+    height: 1px;
+}
+:focus {
+  outline: 0;
+}
+.clearfix:after {
+  content:"\200B";
+  display:block;
+  height:0;
+  clear:both;
+}
+.clearfix { *zoom:1; }
+.fl { float: left;}
+.fr { float: right;}
+.w {
+  width: 1024px;  /*根据需要修改*/
+  margin: 0 auto;
+}
+.tc {
+  text-align: center;
+}
+.vm {
+  vertical-align: middle;
+}
+.tl { text-align: left; }
+.mr10 { margin-right: 10px;}
+.hide {visibility: hidden;}
+.disappear {display: none;}
+.ibk {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+

@@ -4,7 +4,7 @@ var  myApp = angular.module('myApp',['ngRoute']);
 var options = {};
 options.api = {};
 options.api.base_url = "http://127.0.0.1:3000";
-/* @ngInject */
+
 myApp.config(function($routeProvider){
      $routeProvider.
         when('/',{
@@ -35,13 +35,12 @@ myApp.config(function($routeProvider){
 
 })
 
-/* @ngInject */
+
 myApp.config(function($httpProvider){
     $httpProvider.interceptors.push('TokenInterceptor');
 })
 
 //前端进行路由拦截
-/* @ngInject */
 myApp.run(function($rootScope, $location, $window, AuthenticationService) {
     $rootScope.$on("$routeChangeStart", function(event, nextRoute, currentRoute) {
 // 这里有点问题，多次刷新相同的无效连接 则会请求 api.

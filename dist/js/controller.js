@@ -10,7 +10,6 @@ myApp.controller('MainCtrl', ['$scope',
     }
 ]);
 
-/* @ngInject */
 myApp.controller('CatalogCtrl', ['$scope', 'BookService',
     function CatalogCtrl($scope, BookService) {
         console.log(222)
@@ -24,7 +23,6 @@ myApp.controller('CatalogCtrl', ['$scope', 'BookService',
     }
 ]);
 
-/* @ngInject */
 myApp.controller('UserCtrl', ['$scope', '$location', '$timeout', '$window', 'UserService', 'AuthenticationService',
     function UserCtrl($scope, $location, $timeout, $window, UserService, AuthenticationService) {
 

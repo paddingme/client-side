@@ -1,4 +1,3 @@
-/* @ngInject */
 myApp.factory('AuthenticationService', function() {
     // 标记授权与否，对前端页面进行限制
     var auth = {
@@ -8,7 +7,6 @@ myApp.factory('AuthenticationService', function() {
     return auth;
 });
 
-/* @ngInject */
 myApp.factory('TokenInterceptor', ['$q', '$window', '$location', 'AuthenticationService',function ($q, $window, $location, AuthenticationService) {
     return {
         // 添加 token 到 header 头
@@ -46,7 +44,6 @@ myApp.factory('TokenInterceptor', ['$q', '$window', '$location', 'Authentication
     };
 }]);
 
-/* @ngInject */
 myApp.factory('UserService', ['$http',function ($http) {
     return {
         signIn: function(username, password) {
@@ -59,7 +56,7 @@ myApp.factory('UserService', ['$http',function ($http) {
     }
 }]);
 
-/* @ngInject */
+
 myApp.factory('BookService', ['$http',function ($http) {
     return {
         showCatalogs: function(){

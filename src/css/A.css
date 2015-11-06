@@ -1,28 +1,95 @@
 @charset "utf-8";
 
-body, h1, h2, h3, h4, h5, h6, hr, p,dl, dt, dd, ul, ol, li, button, input, textarea, th, td {
-    margin: 0;
-    padding: 0;
-}
-body,button, input, select, textarea {
-    font: 14px/1.5 Helvetica, Tahoma, Arial,"Microsoft YaHei", "微软雅黑", STXihei,"华文细黑", SimSun, "\5b8b\4f53", Heiti, "黑体",sans-serif;
-}
-h1 { font-size: 20px;}
-h2 { font-size: 18px; }
-h3 { font-size: 16px; }
-h4, h5, h6 { font-size: 100%; }
-small { font-size: 12px; }
-ul, ol { list-style: none; }
-a {
-  text-decoration: none;
-  color: #333;
-}
-a:hover {
-  color: #3CA5D5;
-  text-decoration: underline;
-}
-a:active,
-a:hover {
-  outline: 0;
+/*测试 cssgrace */
+
+.foo {
+    clear: fix;
 }
 
+.bar {
+    clear: fix;
+    overflow: hidden;
+    /* 已经可以闭合浮动了 */
+}
+
+.xx::after {
+    position: center;
+    width: 210px;
+    height: 80px;
+    background: rgba(112, 26, 0, .3);
+}
+
+.yy {
+    display: inline-block;
+    opacity: .5;
+}
+
+
+
+.cc {
+    background: url(../img/1.jpg);
+
+}
+
+.cc {
+    background: url(../img/1.jpg);
+ 
+}
+
+.dd {
+    position: center;
+    width: 300px;
+    height: 123px;
+}
+
+
+.ee {
+  position: absolute;
+  display: block;
+}
+
+.ee {
+  position: center;
+  display: block;
+}
+
+.ee {
+  float: left;
+  display: block;
+}
+
+
+.ff {
+  position: absolute;
+  float: left;
+}
+
+
+.hh {
+  text-overflow: ellipsis;
+}
+
+.hh {
+  text-overflow: ellipsis;
+  overflow: auto;
+  white-space: normal;
+}
+
+
+.yy {
+  opacity: .6;
+}
+
+.yy {
+  opacity: 0.8293;
+}
+
+
+.zz {
+  background: rgba(153, 85, 102, 0.3);
+}
+
+
+.ww {
+  display: inline-block;
+}
